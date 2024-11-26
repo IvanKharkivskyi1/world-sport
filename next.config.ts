@@ -1,5 +1,6 @@
 // next.config.js
 module.exports = {
   output: 'export',
-  // Ваші інші параметри конфігурації, якщо потрібно
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/world-sport/' : '',
 };
+
